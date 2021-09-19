@@ -2,7 +2,7 @@
 # State-Estimation-and-Localization-for-Self-Driving-Cars
 
 ## Error State Extended Kalman Filter
-In the State Estimation Project,I have implemented a losely coupled estimator using Error-State Extended Kalman Filter (ES-EKF) to localize a Self Driving vehicle using a data set gathered during a test drive in the carless simulator.The data set contains measurements from a sensor array on a moving self-driving car.The sensor array consists of an IMU, a GNSS receiver, and a LiDAR, all of which provide measurements of varying reliability and at different rates.While driving, the vehicle is subject to various dynamic effects caused by the environment, the drive terrain, and the suspension.
+In the State Estimation Project,I have implemented a losely coupled estimator using Error-State Extended Kalman Filter (ES-EKF) to localize a Self Driving vehicle using a data set gathered during a test drive in the CARLA simulator.The data set contains measurements from a sensor array on a moving self-driving car.The sensor array consists of an IMU, a GNSS receiver, and a LiDAR, all of which provide measurements of varying reliability and at different rates.While driving, the vehicle is subject to various dynamic effects caused by the environment, the drive terrain, and the suspension.
 
 The filter relies on IMU data to propagate the state forward in time, and GPS and LIDAR position updates to correct the state estimate
 A 10-dimensional state vector that includes a 3D position, a 3D velocity, and a 4D unit quaternion that will represent the orientation of our vehicle with respect to a navigation frame is used as the state of the vehicle and the IMU output specific forces and rotational rates in the sensor frame are taken as the inputs.
